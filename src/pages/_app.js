@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Layout from '@/layout/Layout'
 import '../styles/scss/theme.scss'
 import '@/styles/globals.css'
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   )
 }
