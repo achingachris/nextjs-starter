@@ -1,14 +1,11 @@
-import Head from 'next/head'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import MetaTags from './MetaTags'
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Head>
-        <title>Next.js Starter App</title>
-        <meta name='description' content='Next.js App' />
-      </Head>
+      <MetaTags />
       <NavBar />
       <main className='container'>{children}</main>
       <Footer />
